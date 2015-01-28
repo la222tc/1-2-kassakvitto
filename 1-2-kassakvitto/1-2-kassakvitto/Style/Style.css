@@ -6,9 +6,35 @@
     margin:auto;
     border:1px solid black;
     border-radius:15px;
-    width:20%;
+    width:15%;
+    background-color:#F0F0F0;
 }
 
 h1 {
     text-align:center;
+}
+
+#SummaryDiv div {
+    margin-bottom:20px;
+    border-bottom:1px dashed black;
+}
+
+#TotalLabel {
+    float:right;
+    margin-right:5px;
+}
+
+#DiscountPercentLabel{
+    margin-right:5px;
+    float:right;
+}
+
+#DiscoutLabel {
+    margin-right:5px;
+    float:right;
+}
+
+#ToPayLabel {
+    margin-right:5px;
+    float:right;
 }

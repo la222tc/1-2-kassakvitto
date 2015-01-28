@@ -22,6 +22,15 @@ namespace _1_2_kassakvitto {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// ValidationSummary1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary1;
+        
+        /// <summary>
         /// TotalLiteral control.
         /// </summary>
         /// <remarks>
@@ -82,7 +91,7 @@ namespace _1_2_kassakvitto {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl SummaryDiv;
+        protected global::System.Web.UI.WebControls.Panel SummaryDiv;
         
         /// <summary>
         /// TotalLabel control.

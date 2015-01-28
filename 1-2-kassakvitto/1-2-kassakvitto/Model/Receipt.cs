@@ -12,9 +12,10 @@ namespace _1_2_kassakvitto.Model
         public double DiscountRate { get; private set; }
         public double MoneyOff { get; private set; }
         public double Subtotal {
+            
             get { return _subtotal; } 
 
-            set 
+            private set 
             {
                 if (value <= 0)
                 {
@@ -57,7 +58,7 @@ namespace _1_2_kassakvitto.Model
 
         public Receipt(double subtotal)
         {
-            
+            Calculate(subtotal);
         }
     }
 }

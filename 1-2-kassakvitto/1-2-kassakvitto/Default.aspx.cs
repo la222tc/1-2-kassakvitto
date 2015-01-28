@@ -11,18 +11,17 @@ namespace _1_2_kassakvitto
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            SummaryDiv.Visible = false;
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            try
+            if (IsValid)
             {
-                if (IsValid)
+                try
                 {
                     var input = InputTextBox.Text;
                     Model.Receipt Receipt = new Model.Receipt(double.Parse(input));
-                    Receipt.Calculate(double.Parse(input));
+                    //Receipt.Calculate(double.Parse(input));
 
                     TotalLabel.Text = String.Format("{0:c}", Receipt.Subtotal);
                     DiscountPercentLabel.Text = String.Format("{0:p0}", Receipt.DiscountRate);
@@ -31,10 +30,10 @@ namespace _1_2_kassakvitto
 
                     SummaryDiv.Visible = true;
                 }
-            }
-            catch (Exception ex)
-            {
-                ModelState.AddModelError(String.Empty, ex.Message);
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError(String.Empty, ex.Message);
+                }
             }
         }
     }
